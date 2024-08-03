@@ -49,6 +49,22 @@ public async Task<int> AddAsync(Customer entity)
 }
 ```
 
+* Easy to Update as well
+
+```ruby
+public async Task<int> UpdateAsync(Customer entity)
+{
+    var sql = "UPDATE Customer SET Name = @Name, Email = @Email WHERE Id = @Id";
+    using (var connection = new SqlConnection(configuration.GetConnectionString("DefaultConnection")))
+    {
+        connection.Open();
+        var result = await connection.ExecuteAsync(sql, entity);
+
+        return result;
+    }
+}
+```
+
 
 ## Diagram
 
@@ -56,6 +72,19 @@ public async Task<int> AddAsync(Customer entity)
 
 
 ## Docker Commands
-* Pull latest Image of SQL Server version: docker pull mcr.microsoft.com/mssql/server
-* Run Image in Windows: docker run --name sqlserver -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=p@ssw0rd" -p 1433:1433 -d mcr.microsoft.com/mssql/server
-* Run Image Winfows/WSL 2: docker run -v ~/docker --name sqlserver -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=p@ssw0rd" -p 1433:1433 -d mcr.microsoft.com/mssql/server
+* Pull latest Image of SQL Server version:
+  ```ruby
+  docker pull mcr.microsoft.com/mssql/server
+  ```
+  
+* Run Image in Windows:
+
+  ```ruby
+  docker run --name sqlserver -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=p@ssw0rd" -p 1433:1433 -d mcr.microsoft.com/mssql/server
+  ```
+  
+* Run Image Winfows/WSL 2:
+  
+```ruby
+  docker run -v ~/docker --name sqlserver -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=p@ssw0rd" -p 1433:1433 -d mcr.microsoft.com/mssql/server
+```
