@@ -72,13 +72,14 @@ public async Task<int> UpdateAsync(Customer entity)
 }
 ```
 
-
 <br>
 
 ## Diagram
 
 ![image](https://github.com/user-attachments/assets/ab80f577-5034-41d3-a5cd-bf3b9c835eaa)
 
+
+<br>
 
 ## Docker Commands
 * Pull latest Image of SQL Server version:
