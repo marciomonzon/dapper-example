@@ -8,7 +8,7 @@
   because you can write SQL "as it" and also provides to the developer the ability to write complex queries.
 </p>
 
-## Advandages
+## Advantages
 * It is an ORM;
 * Open-source;
 * .NET and .NET Core full Compatibility;
