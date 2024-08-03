@@ -97,3 +97,6 @@ public async Task<int> UpdateAsync(Customer entity)
 ```ruby
   docker run -v ~/docker --name sqlserver -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=p@ssw0rd" -p 1433:1433 -d mcr.microsoft.com/mssql/server
 ```
+
+## Useful documentation
+* Dapper: https://www.learndapper.com/
