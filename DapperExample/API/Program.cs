@@ -1,8 +1,5 @@
-
-using API.Middlewares;
 using DapperExample.Infrastructure;
 using DapperExample.Infrastructure.Interfaces;
-using System;
 
 namespace API
 {
