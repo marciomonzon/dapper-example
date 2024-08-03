@@ -98,5 +98,7 @@ public async Task<int> UpdateAsync(Customer entity)
   docker run -v ~/docker --name sqlserver -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=p@ssw0rd" -p 1433:1433 -d mcr.microsoft.com/mssql/server
 ```
 
+<br>
+
 ## Useful documentation
 * Dapper: https://www.learndapper.com/
