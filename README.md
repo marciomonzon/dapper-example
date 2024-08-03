@@ -8,6 +8,8 @@
   because you can write SQL "as it" and also provides to the developer the ability to write complex queries.
 </p>
 
+<br>
+
 ## Advantages
 * It is an ORM;
 * Open-source;
@@ -15,6 +17,8 @@
 * Execute Raw SQL Queries and Stored Procedures;
 * Great perfomance;
 * Supports parameterized queries to protect againts SQL injection attacks.
+
+<br>
 
 ## Example Project
 <p>
@@ -27,6 +31,8 @@
 * Dapper;
 * Repository Pattern;
 * SQL Server in Docker.
+
+<br>
 
 ## Examples
 <p>
@@ -65,6 +71,8 @@ public async Task<int> UpdateAsync(Customer entity)
 }
 ```
 
+
+<br>
 
 ## Diagram
 
