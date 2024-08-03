@@ -22,7 +22,8 @@
 
 ## Example Project
 <p>
-  This project developed as an example, has an ASP.NET API which has Customers CRUD endpoints.
+  This project was developed as an example for study purpose.
+  It Has an ASP.NET API which has Customers CRUD endpoints.
 </p>
 
 ## Technical Information
